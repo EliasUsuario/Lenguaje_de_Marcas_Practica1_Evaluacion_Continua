@@ -283,7 +283,7 @@ html {
 }
         
 #Blog .fila .servicio:hover {
-    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+    box-shadow: 5px 5px 10px #0b07f3, -5px -5px 10px #8a8a8a;
 }
         
 #Blog .fila .servicio .icono {
@@ -291,7 +291,6 @@ html {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #d3d3d3;
     padding: 20px;
     margin-bottom: 25px;
 }
@@ -379,5 +378,40 @@ html {
 #proyectos .fila .proyecto:hover .info {
     opacity: 1;
     bottom: 0;
-        }
+}
+
+.formulario {
+  max-width: 700px;
+  margin: auto;
+  padding: 1em;
+}
+
+.grupo-doble {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.grupo-doble input {
+  flex: 1 1 45%;
+  min-width: 200px;
+}
+
+.grupo-simple {
+  margin-top: 1em;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #24010a;
+  width: 100%;
+
+
+}
       
