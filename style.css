@@ -169,7 +169,23 @@ html {
     text-align: center;
 }
         
-
+        
+ #inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+        
+#inicio .contenido .presentacion a:hover {
+    background-color: #ff5080;
+}
         
 #icono-menu {
     color: #fff;
@@ -178,18 +194,36 @@ html {
 
 
         
-
-        
 #currículum {
     max-width: 1100px;
     margin: auto;
     padding: 100px 15px;
     color: #111135;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
         
-/* #Aquí van las modificaciones de mi foto (pendiente de subir)*/
-     
+#currículum .contenedor-foto {
+    max-width: 400px;
+    margin-right: 80px;
+    flex-shrink: 0;
+
+}
+        
+#currículum .contenedor-foto img {
+            
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+        
+#currículum .currículum {
+ margin: auto;
+ max-width: 600px;
+
+}   
        
         
 #currículum .currículum {
@@ -411,7 +445,107 @@ input, textarea, button {
   background-color: rgba(0, 0, 0, 0.1);
   color: #24010a;
   width: 100%;
+}
 
+
+
+
+/*MENÜ RESPONSIVE*/
+
+@media screen and (max-width: 700px) {
+    .boton-menu{
+    display: block;
+    }
+    .menu-principal{
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #292945;
+    position: absolute;
+    top:100%;
+    right: 0;
+    left: 0;
+    padding: 15px 20px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    }
+    .menu-principal.menu-desplegado{
+    display: flex;
+    }
+
+    .menu-principal a{
+    padding: 10px 12px;
+    font-size: 17px;
+    }
+
+
+    #currículum {
+    flex-direction: column;
+    padding: 50px 15px;
+    align-items: center;
+    text-align: center;
+    }
+
+    #currículum .contenedor-foto {
+    margin: 0 0 30px 0;
+    max-width: 100%;
+    }   
+
+    #currículum .currículum {
+    max-width: 100%;
+    }
+
+    #currículum .currículum h2 {
+    font-size: 28px;
+    }
+
+    #currículum .currículum h3 {
+    font-size: 16px;
+    }
+
+    #currículum .currículum p {
+    font-size: 13px;
+    line-height: 22px;
+ 
+    }
 
 }
-      
+
+
+
+ /* COOKIES */
+
+.cookie-popup{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    display:none;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    z-index: 1000;
+}
+
+.cookie-popup.show{
+    display: flex;
+}
+
+.cookie-popup button{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cookie-popup a{
+    color: #007bff;
+    text-decoration: underline;
+}
+
