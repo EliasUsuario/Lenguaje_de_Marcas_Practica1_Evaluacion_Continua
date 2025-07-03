@@ -288,6 +288,8 @@ html {
     padding: 100px 15px;
     text-align: center;
     background-color: #f3f3f3;
+    
+    
 }
         
 #Blog .titulo-seccion {
@@ -299,12 +301,24 @@ html {
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
+
+#Blog .columna {
+    flex: 1 1 calc(33.333% - 20px); /* crecimiento, encogimiento, tamaño base */
+    box-sizing: border-box;
+    min-width: 250px;
+}
+
+
         
 #Blog .fila {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    justify-content: stretch;
     max-width: 1150px;
     margin: 30px auto;
+    gap: 10px;
+
 }
         
 #Blog .fila .servicio {
@@ -414,37 +428,57 @@ html {
     bottom: 0;
 }
 
+
+#contacto {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+#contacto h3 {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+    margin: 30px auto;
+    
+    
+}
+
 .formulario {
-  max-width: 700px;
-  margin: auto;
-  padding: 1em;
+    max-width: 600px;
+    margin: auto;
 }
 
-.grupo-doble {
-  display: flex;
-  gap: 1em;
-  flex-wrap: wrap;
-}
-
-.grupo-doble input {
-  flex: 1 1 45%;
-  min-width: 200px;
-}
-
+.grupo-doble,
 .grupo-simple {
-  margin-top: 1em;
+    margin-bottom: 15px;
 }
 
-input, textarea, button {
-  width: 100%;
-  padding: 0.8em;
-  font-size: 1rem;
-  box-sizing: border-box;
-  border-radius: 0.5em;
-  left: 0px;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #24010a;
-  width: 100%;
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background: #333;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #ff5080;
 }
 
 
@@ -469,6 +503,7 @@ input, textarea, button {
     box-shadow: 0 6px 10px rgba(0,0,0,0.2);
     z-index: 100;
     }
+
     .menu-principal.menu-desplegado{
     display: flex;
     }
@@ -477,6 +512,28 @@ input, textarea, button {
     padding: 10px 12px;
     font-size: 17px;
     }
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: center;   /* Centra los elementos horizontalmente */
+  gap: 30px;                 /* Espacio entre cada sección */
+  padding: 40px;
+}
+
+/* ✅ Cada sección se adapta individualmente */
+#secccion {
+  flex: 1 1 300px;           /* Se expande y contrae, con un mínimo de 300px */
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo suave para distinguir secciones */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+}
+
+
 
 
     #currículum {
@@ -509,7 +566,7 @@ input, textarea, button {
  
     }
 
-}
+
 
 
 
