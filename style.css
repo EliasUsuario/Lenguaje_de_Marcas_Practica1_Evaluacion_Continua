@@ -1,0 +1,49 @@
+/*Fuentes usadas: Montserrat: ExtraLight 200_Regular 400_ SemiBold 600 */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("/tip/Montserrat-Italic-VariableFont_wght.ttf");
+    src: url("/tip/Montserrat-VariableFont_wght.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.boton-menu{
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.boton-menu:hover{
+    transform: scale(1.1);
+}
+.menu-principal{
+    display: flex;
+    gap: 24px;
+}
+
+.menu-principal a{
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    
+}
+
+.menu-principal a:hover{
+    background-color: #292945;
+    color: #fff;
+}
+
