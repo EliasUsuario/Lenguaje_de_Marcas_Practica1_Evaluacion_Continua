@@ -7,6 +7,11 @@ function nav(){
     let lanz = document.querySelector(lanzador);
     lanz.addEventListener("click",despliegaMenu);
 
+    lanz.addEventListener("click", function(e) {
+    e.preventDefault(); 
+    e.stopPropagation();
+    })
+
 }
 
 
