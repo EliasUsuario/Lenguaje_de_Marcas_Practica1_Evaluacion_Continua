@@ -488,42 +488,57 @@ button[type="submit"]:hover {
     background: #ff5080;
 }
 
+#politica-privacidad {
+    max-width: 1100px;
+    margin: auto;
+    font-size: 10px;
+    text-align: center;
+    
+    padding: 10px;
+    color: #111135;
+    justify-content: center;
+    gap: 5px;
+    background-color: #f3d1da;;
+    border-radius: 12px;
+
+}
 
 
+/*MENÚ RESPONSIVE*/
 
-/*MENÜ RESPONSIVE*/
-
-@media screen and (max-width: 700px) {
+ @media screen and (max-width: 770px) {
     .boton-menu{
-    display: block;
+        display: block;
     }
     .menu-principal{
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-    background-color: #292945;
-    position: absolute;
-    top:100%;
-    right: 0;
-    left: 0;
-    padding: 15px 20px;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
-    z-index: 100;
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        background-color: #292945;
+        position: absolute;
+        top:100%;
+        right: 0;
+        left: 0;
+        padding: 15px 20px;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+        z-index: 100;
     }
 
     .menu-principal.menu-desplegado{
-    display: flex;
+        display: flex;
     }
 
     .menu-principal a{
-    padding: 10px 12px;
-    font-size: 17px;
+        padding: 10px 12px;
+        font-size: 17px;
     }
-  
+}
+
+main{
+    padding: 30px;
 }
 
     
-
 
 /* COOKIES */
 
