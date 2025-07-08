@@ -1,0 +1,29 @@
+[33mcommit 3081d7f313fdb363d92f29f5c3ad94230a511d8f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: EliasUsuario <correoelias84@gmail.com>
+Date:   Thu Jul 3 18:23:58 2025 +0200
+
+    Se añaden secciones de blog, proyectos y se modifica el css
+
+[33mcommit 12b6b6900b238c8dffe9c0d88a43e20f952b9b05[m
+Author: EliasUsuario <correoelias84@gmail.com>
+Date:   Thu Jul 3 14:38:34 2025 +0200
+
+    se añade la sección Blog y se modifica style.css
+
+[33mcommit bd46e331a11c0de66bb1accd8515dcd1fa527728[m
+Author: EliasUsuario <correoelias84@gmail.com>
+Date:   Thu Jul 3 12:45:29 2025 +0200
+
+    Se desarrolla index.html, añadiendo enlaces al style y al scrip. Se enlaza y prueban las fuentes de texto e iconos de forma local. Se desarrolla el menú de inicio y la sección de currículum
+
+[33mcommit 9c680c4fd917bc9cabed9928da85f9e29c1d2ceb[m
+Author: EliasUsuario <correoelias84@gmail.com>
+Date:   Tue Jul 1 12:31:39 2025 +0200
+
+    Se crean y se suben a repo index.html, script.js y style.css
+
+[33mcommit d3ebcd5081a1734336a73e1a0a1f7cf0c087c77c[m
+Author: EliasUsuario <correoelias84@gmail.com>
+Date:   Tue Jul 1 12:19:40 2025 +0200
+
+    Se agrega css, img, tip y webfonts
