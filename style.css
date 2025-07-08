@@ -34,7 +34,7 @@ html {
 
 .menu-principal{
     display: flex;
-    gap: auto;
+    gap: 10px;
 }
 
 .menu-principal a{
@@ -43,7 +43,7 @@ html {
     font-size: 16px;
     padding: 10px 14px;
     border-radius: 6px;
-    transition-duration: 0,3s;
+    transition-duration: 0.3s;
 }
 
 .menu-principal a:hover{
@@ -228,11 +228,6 @@ html {
  max-width: 600px;
 
 }   
- 
-        
-#currículum .currículum {
-    margin: auto;
-}
         
 #currículum .currículum .titulo-seccion {
     font-size: 22px;
@@ -544,6 +539,8 @@ button[type="submit"]:hover {
 
     }
 
+   
+
     #currículum .contenedor-foto img {
     content: url("img/foto-movil.webp");
   }
@@ -552,9 +549,6 @@ button[type="submit"]:hover {
  
 }
 
-main{
-    padding: 30px;
-}
 
     
 
