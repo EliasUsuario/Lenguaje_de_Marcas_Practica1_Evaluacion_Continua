@@ -51,6 +51,13 @@ html {
     color: #ff5080;
 }
 
+.logo-pagina {
+    font-size: 40px;
+}
+
+.icono {
+  font-size: 30px;
+}
 
 
 #inicio {
@@ -543,8 +550,15 @@ button[type="submit"]:hover {
 
     #currículum .contenedor-foto img {
     content: url("img/foto-movil.webp");
-  }
+    }
 
+    .logo-pagina {
+    font-size: 30px;
+    }
+
+    .icono {
+    font-size: 25px;
+    }
 
  
 }
