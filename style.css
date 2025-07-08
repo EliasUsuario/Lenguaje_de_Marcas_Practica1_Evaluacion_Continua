@@ -1,8 +1,10 @@
 /*Fuentes usadas: Montserrat: ExtraLight 200_Regular 400_ SemiBold 600 */
 @font-face {
-    font-family: 'Montserrat';
-    src: url("/tip/Montserrat-Italic-VariableFont_wght.ttf");
-    src: url("/tip/Montserrat-VariableFont_wght.ttf");
+  font-family: 'Montserrat';
+  src: url("/tip/Montserrat-VariableFont_wght.ttf") format("truetype"),
+       url("/tip/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal italic;
 }
 
 
@@ -25,7 +27,8 @@ html {
     text-decoration: none;
     display: none;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease-in-out;
+    
 }
 
 .boton-menu:hover{
@@ -66,7 +69,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
+    min-height: 100vh;
 
 }
  
