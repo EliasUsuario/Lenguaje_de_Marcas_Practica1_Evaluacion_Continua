@@ -33,7 +33,7 @@ html {
 
 .menu-principal{
     display: flex;
-    gap: 24px;
+    gap: auto;
 }
 
 .menu-principal a{
