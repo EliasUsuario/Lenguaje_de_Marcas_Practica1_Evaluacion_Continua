@@ -1,10 +1,23 @@
-/*Fuentes usadas: Montserrat: ExtraLight 200_Regular 400_ SemiBold 600 */
+/*Fuentes usadas (googlefonts descargado en local): Montserrat-Italic, Montserrat-variable, Retro*/
 @font-face {
-  font-family: 'Montserrat';
-  src: url("/tip/Montserrat-VariableFont_wght.ttf") format("truetype"),
-       url("/tip/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-family:"Montserrat Italic";
+  src: url("/tip/Montserrat-Italic-VariableFont_wght.ttf");
   font-weight: 100 900;
-  font-style: normal italic;
+  font-style: italic; 
+}
+
+@font-face {
+  font-family:"Montserrat";
+  src: url("/tip/Montserrat-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Retro";
+  src: url("/tip/TipRetro.ttf");
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -22,6 +35,7 @@ html {
 
 
 .boton-menu{
+    
     font-size: 28px;
     color: #fff;
     text-decoration: none;
@@ -87,7 +101,7 @@ html {
 
         
 #inicio .contenido header .contenido-header {
-
+    font-family: "Montserrat";
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -98,6 +112,7 @@ html {
 }
 
 #inicio .contenido header .contenido-header h1 {
+    font-family: "Montserrat Italic";
     text-align: center;
     color: #ff5080;
     font-size: 30px;
@@ -112,6 +127,7 @@ html {
 }
         
 #inicio .contenido header .contenido-header nav ul li a {
+    font-family: "Montserrat Italic";
     text-decoration: none;
     color: #0b07f3;
     margin: 0 12px;
@@ -124,6 +140,7 @@ html {
 }
         
 #inicio .contenido header .contenido-header .redes a {
+    font-family: "Montserrat Italic";
     color: #1048e2;
     display: inline-block;
     align-items: center;
@@ -153,6 +170,7 @@ html {
 }
         
 #inicio .contenido .presentacion .bienvenida {
+    font-family: "Montserrat Italic";
     font-size: 50px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -169,11 +187,13 @@ html {
  /*Nombre Elias Martinez*/
  
 #inicio .contenido .presentacion h2 span {
+    font-family: "Montserrat";
     font-size: 50px;
     color: #ff5080;
 }
         
 #inicio .contenido .presentacion .descripcion {
+    font-family: "Montserrat";
     max-width: 700px;
     margin: 25px auto;
     font-size: 18px;
@@ -234,8 +254,8 @@ html {
 }
         
 #currículum .currículum {
- margin: auto;
- max-width: 600px;
+    margin: auto;
+    max-width: 600px;
 
 }   
         
@@ -249,6 +269,7 @@ html {
 }
         
 #currículum .currículum h2 {
+    font-family: Retro;
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
@@ -256,10 +277,12 @@ html {
 }
         
 #currículum .currículum h2 span {
+    font-family: Retro;
     color: #ff5080;
 }
         
 #currículum .currículum h3 {
+    font-family: Retro;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -268,6 +291,7 @@ html {
 }
         
 #currículum .currículum p {
+    font-family: Retro;
     font-size: 14px;
     line-height: 25px;
     color: #565656;
@@ -302,6 +326,7 @@ html {
 }
         
 #Blog .titulo-seccion {
+    font-family: "Montserrat";
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
@@ -353,6 +378,7 @@ html {
 }
         
 #Blog .fila .servicio h4 {
+    font-family: "Montserrat Italic";
     font-size: 22px;
     margin-bottom: 25px;
 }
@@ -372,6 +398,7 @@ html {
 }
         
 #Blog .fila .servicio p {
+    font-family: "Montserrat Italic";
     font-size: 14px;
     line-height: 22px;
 }
@@ -385,6 +412,7 @@ html {
 }
 
 #proyectos .titulo-seccion {
+  font-family: "Retro";
   text-align: center;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -415,12 +443,12 @@ html {
   width: 100%;
   height: auto;
   object-fit: cover;
-  filter: grayscale(1);
+  filter: grayscale(0.8);
   transition: filter 0.5s;
 }
 
 .proyecto:hover img {
-  filter: grayscale(0);
+  filter: grayscale(0.2);
 }
 
 .info {
@@ -449,6 +477,7 @@ html {
 }
 
 #contacto h3 {
+    font-family: "Retro";
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
@@ -495,6 +524,9 @@ button[type="submit"]:hover {
 }
 
 #politica-privacidad {
+    font-family: 'Retro';
+    src: url("../tip/TipRetro.ttf");
+    
     max-width: 1100px;
     margin: auto;
     font-size: 10px;
