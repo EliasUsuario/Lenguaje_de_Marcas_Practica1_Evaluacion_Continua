@@ -1,31 +1,26 @@
-/*Fuentes usadas (googlefonts descargado en local): Montserrat-Italic, Montserrat-variable, Retro*/
-@font-face {
-  font-family:"Montserrat Italic";
-  src: url("/tip/Montserrat-Italic-VariableFont_wght.ttf");
-  font-weight: 100 900;
-  font-style: italic; 
-}
+/*Fuentes usadas (googlefonts descargado en local):Montserrat-variable, Retro, Honk-Regular-VariableFont_MORF,SHLN*/
+
 
 @font-face {
   font-family:"Montserrat";
   src: url("/tip/Montserrat-VariableFont_wght.ttf");
   font-weight: 100 900;
   font-style: normal;
-}
 
-@font-face {
-  font-family:"Retro";
-  src: url("/tip/TipRetro.ttf");
-  font-weight: 400;
+}font-face {
+  font-family:"Freckle Face";
+  src: url("/tip/FreckleFace-Regular.ttf") format('truetype');
+  font-weight: normal;
   font-style: normal;
+    
 }
-
+ 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     
 }
 
@@ -51,7 +46,7 @@ html {
 
 .menu-principal{
     display: flex;
-    gap: 10px;
+    gap: 3px;
 }
 
 .menu-principal a{
@@ -112,7 +107,7 @@ html {
 }
 
 #inicio .contenido header .contenido-header h1 {
-    font-family: "Montserrat Italic";
+    font-family: "Montserrat";
     text-align: center;
     color: #ff5080;
     font-size: 30px;
@@ -127,7 +122,7 @@ html {
 }
         
 #inicio .contenido header .contenido-header nav ul li a {
-    font-family: "Montserrat Italic";
+    font-family: "Montserrat";
     text-decoration: none;
     color: #0b07f3;
     margin: 0 12px;
@@ -140,7 +135,7 @@ html {
 }
         
 #inicio .contenido header .contenido-header .redes a {
-    font-family: "Montserrat Italic";
+    font-family: "Montserrat";
     color: #1048e2;
     display: inline-block;
     align-items: center;
@@ -170,7 +165,7 @@ html {
 }
         
 #inicio .contenido .presentacion .bienvenida {
-    font-family: "Montserrat Italic";
+    font-family: "Montserrat";
     font-size: 50px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -269,7 +264,7 @@ html {
 }
         
 #currículum .currículum h2 {
-    font-family: Retro;
+    font-family: "Freckle Face";
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
@@ -277,12 +272,12 @@ html {
 }
         
 #currículum .currículum h2 span {
-    font-family: Retro;
+    font-family: "Freckle Face";
     color: #ff5080;
 }
         
 #currículum .currículum h3 {
-    font-family: Retro;
+    font-family: "Freckle Face";
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -291,8 +286,9 @@ html {
 }
         
 #currículum .currículum p {
-    font-family: Retro;
-    font-size: 14px;
+    font-family: "Freckle Face";
+    font-size: 24px;
+    color: #333;
     line-height: 25px;
     color: #565656;
     margin-bottom: 12px;
@@ -311,7 +307,7 @@ html {
         
 #currículum .currículum a:hover {
     background-color: #ff5080;
-    color: #fff;
+    color: #ffffff;
 }
       
 
@@ -378,7 +374,7 @@ html {
 }
         
 #Blog .fila .servicio h4 {
-    font-family: "Montserrat Italic";
+    font-family: "Montserrat";
     font-size: 22px;
     margin-bottom: 25px;
 }
@@ -398,7 +394,7 @@ html {
 }
         
 #Blog .fila .servicio p {
-    font-family: "Montserrat Italic";
+    font-family: "Montserrat";
     font-size: 14px;
     line-height: 22px;
 }
@@ -412,7 +408,7 @@ html {
 }
 
 #proyectos .titulo-seccion {
-  font-family: "Retro";
+  font-family: "Freckle Face";
   text-align: center;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -453,7 +449,7 @@ html {
 
 .info {
   position: absolute;
-  bottom: -40px;
+  top: -40px;
   left: 0;
   width: 100%;
   padding: 10px;
@@ -465,7 +461,7 @@ html {
 
 .proyecto:hover .info {
   opacity: 1;
-  bottom: 0;
+  top: 0;
 }
 
 
@@ -477,7 +473,7 @@ html {
 }
 
 #contacto h3 {
-    font-family: "Retro";
+    font-family: "Freckle Face";
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
@@ -524,9 +520,7 @@ button[type="submit"]:hover {
 }
 
 #politica-privacidad {
-    font-family: 'Retro';
-    src: url("../tip/TipRetro.ttf");
-    
+    font-family: "Freckle Face";
     max-width: 1100px;
     margin: auto;
     font-size: 10px;
