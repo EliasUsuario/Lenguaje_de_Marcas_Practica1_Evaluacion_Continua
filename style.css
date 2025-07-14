@@ -73,7 +73,7 @@ html {
 
 
 #inicio {
-    background-image: url("img/fondo-inicio.png");
+    background-image: url("img/fondoInicio.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -567,7 +567,7 @@ button[type="submit"]:hover {
 
     #inicio {
       
-    background-image: url("img/fondo-inicio-movil.webp");
+    background-image: url("img/fondoInicioMovil.png");
 
 
     background-position: center center;
@@ -581,7 +581,7 @@ button[type="submit"]:hover {
    
 
     #currículum .contenedor-foto img {
-    content: url("img/foto-movil.webp");
+    content: url("img/fotoMovil.png");
     }
 
     .logo-pagina {
