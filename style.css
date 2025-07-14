@@ -1,17 +1,18 @@
 /*Fuentes usadas (googlefonts descargado en local):Montserrat-variable, Retro, Honk-Regular-VariableFont_MORF,SHLN*/
 
-
 @font-face {
   font-family:"Montserrat";
   src: url("/tip/Montserrat-VariableFont_wght.ttf");
   font-weight: 100 900;
   font-style: normal;
+  font-display: swap;
 
 }font-face {
   font-family:"Freckle Face";
   src: url("/tip/FreckleFace-Regular.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
     
 }
  
