@@ -1,26 +1,17 @@
-let lanzador = "#enlace-menu";
-let desplegable = "#menu";
-let despliegaClase = "menu-desplegado";
+let botonMenu = document.getElementById("enlace-menu");
+let menu = document.getElementById("menu");
 
 
-function nav(){
-    let lanz = document.querySelector(lanzador);
-    lanz.addEventListener("click",despliegaMenu);
-
-    lanz.addEventListener("click", function(e) {
-    e.preventDefault(); 
-    e.stopPropagation();
-    })
-
-}
+botonMenu.onclick = function(evento) {
+    evento.stopPropagation(); 
+    menu.classList.toggle("menu-desplegado");
+};
 
 
+document.onclick = function() {
+    menu.classList.remove("menu-desplegado");
+};
 
-function despliegaMenu(){
-    let despl = document.querySelector(desplegable);
-    despl.classList.toggle(despliegaClase);
-
-}
 
 
 
