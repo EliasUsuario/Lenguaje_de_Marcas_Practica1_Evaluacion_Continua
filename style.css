@@ -566,9 +566,9 @@ button[type="submit"]:hover {
     }
 
     #inicio {
-     /*   
+      
     background-image: url("img/fondo-inicio-movil.webp");
-*/
+
 
     background-position: center center;
     background-repeat: no-repeat;
@@ -579,11 +579,11 @@ button[type="submit"]:hover {
     }
 
    
-/*
+
     #currículum .contenedor-foto img {
     content: url("img/foto-movil.webp");
     }
-*/
+
     .logo-pagina {
     font-size: 30px;
     }
