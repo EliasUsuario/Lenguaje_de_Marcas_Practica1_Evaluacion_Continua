@@ -1,22 +1,27 @@
-/*Fuentes usadas (googlefonts descargado en local):Montserrat-variable, Retro, Honk-Regular-VariableFont_MORF,SHLN*/
+/*Fuentes usadas (googlefonts descargado en local):
+1- Montserrat-variable 
+2- FreckleFace-Regular
+*/
+
+/* Tipografías Cargadas Localmente */
 
 @font-face {
   font-family:"Montserrat";
   src: url("/tip/Montserrat-VariableFont_wght.ttf");
   font-weight: 100 900;
   font-style: normal;
-  font-display: swap;
+  font-display: swap;  /* Carga una fuente de reserva local*/
 
 }font-face {
   font-family:"Freckle Face";
   src: url("/tip/FreckleFace-Regular.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: swap; /* Carga una fuente de reserva local*/
     
 }
  
-
+/* Tipografía por defecto para todo el documento*/
 *{
     margin: 0;
     padding: 0;
@@ -24,16 +29,18 @@
     font-family: "Montserrat";
     
 }
+/* Deslizamiento suave por el navegador*/
 
 html {
     scroll-behavior: smooth;
 }
 
+/* MENÚ RESPONSIVE*/
 
 .boton-menu{
     
     font-size: 28px;
-    color: #fff;
+    color: #ff5080;
     text-decoration: none;
     display: none;
     cursor: pointer;
@@ -41,9 +48,7 @@ html {
     
 }
 
-.boton-menu:hover{
-    transform: scale(1.1);
-}
+/* MENÚ DESKTOP*/
 
 .menu-principal{
     display: flex;
@@ -64,14 +69,14 @@ html {
     color: #ff5080;
 }
 
+/* Logo de la página (el icono superor izquierda)*/
+
 .logo-pagina {
     font-size: 40px;
 }
 
-.icono {
-  font-size: 30px;
-}
 
+/* Fondo INICIO*/
 
 #inicio {
     background-image: url("img/fondoInicio.png");
@@ -83,6 +88,7 @@ html {
 
 }
  
+/* MENÚ INICIO*/
 
 #inicio .contenido header {
 
@@ -107,34 +113,17 @@ html {
 
 }
 
-#inicio .contenido header .contenido-header h1 {
-    font-family: "Montserrat";
-    text-align: center;
+
+#inicio .contenido header .contenido-header .seleccionado {
     color: #ff5080;
-    font-size: 30px;
-    font-weight: 800;    
-                  
+
+
 }
-        
-#inicio .contenido header .contenido-header nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-        
-#inicio .contenido header .contenido-header nav ul li a {
-    font-family: "Montserrat";
-    text-decoration: none;
-    color: #0b07f3;
-    margin: 0 12px;
-    font-weight: 800;
-    transition: .5s;
-}
-        
-#inicio .contenido header .contenido-header nav ul li a:hover {
-    color: #ff5080;
-}
-        
+
+
+/* Accesos directos redes*/   
+    
+    
 #inicio .contenido header .contenido-header .redes a {
     font-family: "Montserrat";
     color: #1048e2;
@@ -148,16 +137,15 @@ html {
     color: #ff5080;
 }
         
-#inicio .contenido header .contenido-header .seleccionado {
-    color: #ff5080;
-}
-        
+
+    
+ /* Sección INICIO general*/  
 
 #inicio .contenido .presentacion {
     max-width: 1100px;
     height: 100vh;
     margin: auto;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,6 +153,9 @@ html {
             
 }
         
+/* Sección INICIO, texto "BIENVENIDOS"*/
+
+
 #inicio .contenido .presentacion .bienvenida {
     font-family: "Montserrat";
     font-size: 50px;
@@ -173,14 +164,18 @@ html {
     letter-spacing: 5px;
 }
         
+/* Sección INICIO, texto "Soy xxx estudiante..."*/
+
 #inicio .contenido .presentacion h2 {
     font-size: 50px;
     margin-bottom: 25px;
     text-align: center;
 }
 
+
+
+ /* Sección INICIO texto "Elias Martínez"*/
  
- /*Nombre Elias Martinez*/
  
 #inicio .contenido .presentacion h2 span {
     font-family: "Montserrat";
@@ -188,6 +183,8 @@ html {
     color: #ff5080;
 }
         
+
+/* Sección INICIO texto "Técnico Superior en..."*/
 #inicio .contenido .presentacion .descripcion {
     font-family: "Montserrat";
     max-width: 700px;
@@ -195,44 +192,10 @@ html {
     font-size: 18px;
     text-align: center;
 }
-        
-        
- #inicio .contenido .presentacion a {
-    text-decoration: none;
-    display: inline-block;
-    margin: 25px;
-    padding: 20px 25px;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: .5s;
-}
-        
-#inicio .contenido .presentacion a:hover {
-    background-color: #ff5080;
-}
-        
-#icono-menu {
-    color: #fff;
-    display: none;
-}
+    
 
+/* Seccion CURRICUM, foto*/
 
-        
-#currículum {
-    max-width: 1100px;
-    margin: auto;
-    padding: 100px 15px;
-    color: #111135;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-
-}
-        
 #currículum .contenedor-foto {
     flex: 1 1 300px;
   max-width: 400px;
@@ -248,22 +211,43 @@ html {
     margin: 0 0 30px 0;
     max-width: 100%;
 }
+   
+
+/* Seccion CURRICUM, general*/
         
+#currículum {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+        
+     
 #currículum .currículum {
     margin: auto;
     max-width: 600px;
 
 }   
         
+
+/* Seccion CURRICUM, título*/
+
 #currículum .currículum .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: #253511;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
         
+/* Seccion CURRICUM, "Elías Martínez"*/
+
 #currículum .currículum h2 {
     font-family: "Freckle Face";
     font-size: 34px;
@@ -276,6 +260,9 @@ html {
     font-family: "Freckle Face";
     color: #ff5080;
 }
+
+
+/* Seccion CURRICUM, texto "Estudiante Grado DAM"*/
         
 #currículum .currículum h3 {
     font-family: "Freckle Face";
@@ -285,6 +272,8 @@ html {
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
+
+/* Seccion CURRICUM, texto general*/
         
 #currículum .currículum p {
     font-family: "Freckle Face";
@@ -295,6 +284,9 @@ html {
     margin-bottom: 12px;
 }
         
+/* Seccion CURRICUM, botón descarga*/
+
+
 #currículum .currículum a {
     display: inline-block;
     text-decoration: none;
@@ -313,6 +305,7 @@ html {
       
 
 
+/* Sección BLOG, general*/
 
 #Blog {
     padding: 100px 15px;
@@ -322,6 +315,8 @@ html {
     
 }
         
+/* Sección BLOG, título*/
+
 #Blog .titulo-seccion {
     font-family: "Montserrat";
     text-align: center;
@@ -332,6 +327,8 @@ html {
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
+
+/* Sección BLOG, columnas y filas */
 
 #Blog .columna {
   flex: 1 1 300px;
@@ -365,27 +362,40 @@ html {
     box-shadow: 5px 5px 10px #0b07f3, -5px -5px 10px #8a8a8a;
 }
         
+/* Sección BLOG, iconos */
+
+.icono {
+  font-size: 30px;
+
+}
+
 #Blog .fila .servicio .icono {
     display: inline-block;
-    width: 60px;
+    width: 50%;
     height: 60px;
-    border-radius: 50%;
+
     padding: 20px;
     margin-bottom: 25px;
 }
         
+
+/* Sección BLOG, título servicios */
 #Blog .fila .servicio h4 {
     font-family: "Montserrat";
     font-size: 22px;
     margin-bottom: 25px;
 }
         
+/* Sección BLOG, línea horizontal */
+
 #Blog .fila .servicio hr {
     width: 30%;
     margin: auto;
     color: #000;
     margin-bottom: 25px;
 }
+
+/* Sección BLOG, lista de servicios, despegable */
         
 #Blog .fila .servicio ul {
     list-style: none;
@@ -393,6 +403,8 @@ html {
     justify-content: space-around;
     margin-bottom: 10px;
 }
+
+/* Sección BLOG, lista de servicios */
         
 #Blog .fila .servicio p {
     font-family: "Montserrat";
@@ -401,6 +413,7 @@ html {
 }
        
 
+/* Sección PROYECTOS, general*/ 
 
 #proyectos {
   max-width: 1100px;
@@ -408,16 +421,22 @@ html {
   padding: 80px 20px;
 }
 
+
+/* Sección PROYECTOS, título*/
+
+
 #proyectos .titulo-seccion {
   font-family: "Freckle Face";
   text-align: center;
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: #111135;
+  color: #313511;
   text-decoration: underline;
   text-decoration-color: #d3d3d3;
   text-decoration-thickness: 5px;
 }
+
+/* Sección PROYECTOS, columnas y filas */
 
 .fila {
   display: flex;
@@ -431,11 +450,12 @@ html {
 .proyecto {
   flex: 1 1 300px;
   max-width: 450px;
-  border: 1px solid #000;
+  border: 1px solid #ff5080;
   position: relative;
   overflow: hidden;
 }
 
+/* Sección PROYECTOS, imagenes */
 .proyecto img {
   width: 100%;
   height: auto;
@@ -447,6 +467,9 @@ html {
 .proyecto:hover img {
   filter: grayscale(0.2);
 }
+
+
+/* Sección PROYECTOS, información despegable de los proyectos */
 
 .info {
   position: absolute;
@@ -467,25 +490,31 @@ html {
 
 
 
+/* Sección CONTACTO, general */
+
 #contacto {
     max-width: 1100px;
     padding: 100px 0;
     margin: auto;
 }
 
+/* Sección CONTACTO, título */
+
 #contacto h3 {
     font-family: "Freckle Face";
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: #313511;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
     margin: 30px auto;
     
-    
 }
+
+
+/* Sección CONTACTO, formulario */
 
 .formulario {
     max-width: 600px;
@@ -497,19 +526,23 @@ html {
     margin-bottom: 15px;
 }
 
+
+/* Sección CONTACTO, general del texto */
 input,
 textarea {
     width: 100%;
     padding: 10px;
     font-size: 1em;
-    border: 1px solid #ceadad;
+    border: 1px solid #ceadbb;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
+/* Sección CONTACTO, botón */
+
 button[type="submit"] {
     background: #333;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 12px 25px;
     border: none;
     border-radius: 4px;
@@ -520,6 +553,8 @@ button[type="submit"]:hover {
     background: #ff5080;
 }
 
+/* Sección POLÍTICA DE PRIVACIDAD*/
+
 #politica-privacidad {
     font-family: "Freckle Face";
     max-width: 1100px;
@@ -528,7 +563,7 @@ button[type="submit"]:hover {
     text-align: center;
     
     padding: 10px;
-    color: #111135;
+    color: #343511;
     justify-content: center;
     gap: 5px;
     background-color: #f3d1da;;
@@ -566,6 +601,8 @@ button[type="submit"]:hover {
         font-size: 17px;
     }
 
+/* Imagen de inicio de menor resolución para responsive*/
+
     #inicio {
       
     background-image: url("img/fondoInicioMovil.png");
@@ -578,17 +615,17 @@ button[type="submit"]:hover {
     height: 100%;
 
     }
-
+/* Foto del curriculum de menor resolución para responsive*/
    
 
     #currículum .contenedor-foto img {
     content: url("img/fotoMovil.webp");
     }
-
+/* Tamaño icono (logotipo) para responsive*/
     .logo-pagina {
     font-size: 30px;
     }
-
+/* Tamaño iconos (Blog) para responsive*/
     .icono {
     font-size: 25px;
     }
