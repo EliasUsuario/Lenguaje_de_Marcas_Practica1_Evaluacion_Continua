@@ -3,6 +3,7 @@ let menu = document.getElementById("menu");
 
 
 botonMenu.onclick = function(evento) {
+    evento.preventDefault();
     evento.stopPropagation(); 
     menu.classList.toggle("menu-desplegado");
 };
